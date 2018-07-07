@@ -1,0 +1,19 @@
+
+<% include partials/navbar %>
+
+
+<h1>Nations</h1>
+
+<% country.forEach(function(count){ %>
+
+   <img src="<%= count.image %>">
+   <h3> <%= count.name %> </h3>
+   <h4> <%= count.quoute %>  </h4>
+  
+   <a href="/allCountries/<%= count._id %>"> More Info</a>
+
+<% }); %>
+
+<a href='/allCountries/new'>Want to add your Country!!!!</a>
+<% include ./partials/footer %>
+    

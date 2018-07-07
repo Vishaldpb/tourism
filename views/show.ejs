@@ -1,0 +1,29 @@
+
+
+<% include ./partials/navbar %>
+
+<h1><%=country.name  %></h1>
+<img src="<%=country.image %>">
+
+<h2> Travelling Groups of <%=country.name  %> are </h2>
+
+
+
+
+<% country.groups.forEach(function(group){ %>
+  
+  <h3>Show us also </h3>
+<h3>Name : <%=group.name %></h3>
+<img src="<%=group.image %>">
+<h3>Places To visit: <%=group.places %></h3>
+<h3>Contact:<%=group.contact %></h3>
+<h3>Leader Name: <%=group.leader %></h3>
+<h3>Members: <%=group.members %></h3>
+<h3><%=  group.created.toDateString()%></h3>
+
+
+<% }) %>
+ 
+ <a href = '/allCountries/<%= country._id %>/new2'>Want to Add your Group</a>
+ 
+ <% include ./partials/footer %>

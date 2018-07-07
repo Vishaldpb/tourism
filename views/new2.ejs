@@ -1,0 +1,22 @@
+
+
+<% include ./partials/navbar %>
+
+<h2>Add Your Group!</h2>
+
+<form action = '/allCountries/<%=country._id %>/',method='POST'>
+    <input type = 'text' name = 'name' placeholder = 'Group Name' >
+    <input type = 'text' name = 'image' placeholder = 'Image Url' >
+    <input type="text" name='places' placeholder="Places">
+    <input type="text" name='contact' placeholder="Contact">
+    <input type="text" name='leader' placeholder="Leader Name">
+    <input type="text" name='members' placeholder="Members">
+    <button>Create Group </button>
+    
+    
+</form>
+
+<a href="/allCountries/<%=country._id%>">Go Back</a>
+
+<% include ./partials/footer %>
+   

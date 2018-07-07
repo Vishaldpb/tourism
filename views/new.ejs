@@ -1,0 +1,19 @@
+
+
+<% include ./partials/navbar %>
+
+<h2>Add your Country</h2>
+
+<form action = '/allCountries' method = 'POST'>
+    
+    <input type = 'text' name = 'name' placeholder = 'Country' >
+    <input type = 'text' name = 'image' placeholder = 'Image Url' >
+    <input type="text" name="quoute" placeholder="description">
+    <button> Submit! </button>
+    
+</form>    
+
+<a href="/allCountries">Go Back</a>
+
+
+<% include ./partials/footer %>
